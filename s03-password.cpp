@@ -3,9 +3,9 @@
 
 
 
-int main() 
+int main(int argc, char* argv[]) 
 {
-    std::string pass = "student";
+    std::string pass =argv[1];
     std::string x="";
    do 
     {
