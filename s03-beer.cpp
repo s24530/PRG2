@@ -1,8 +1,9 @@
 #include <iostream>
-
-int main()
+#include <string>
+int main(int argc, char* argv[])
 {
-    for(int i=99;i>=1;i--)
+    int x = argc >=2 ? std::stoi(argv[1]) : 99;
+    for(int i=x;i>=1;i--)
     {
         std::cout<< i <<" bottles of beer on the wall, " << i << " bottle of beer.\n";
         
