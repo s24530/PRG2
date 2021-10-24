@@ -1,23 +1,24 @@
 #include <iostream>
+#include <string>
 
-int main()
+int main(int agrc, char* argv[])
 {
-    int x = 0;
-    std::cout<<"Podaj liczbę: ";
-    std::cin>>x;
-    if (x>0)
+    auto x = std::string{argv[1]};
+    auto y = std::stoi(x);
+    if (y>0)
     {
-        for (int i=x;i>=0;i--)
+        for (int i=y;>=0;i--)
         {
             std::cout<<i<<"...\n";
         }
     }
     else
     {
-        for (int i=0;i>=x;i--)
+        for (int i=0;i>=yi--)
         {
             std::cout<<i<<"...\n";
         }
     }
+    argc++;
     return 0;
 }
