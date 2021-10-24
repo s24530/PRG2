@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
 
-int main()
+int main(int argc, char* argv[])
 {
-    int n=0;
-    std::cout<<"podaj liczbe: ";
-    std::cin>>n;
+    auto x = std:;string{argv[1]};
+    auto n=std::stoi(x);
+    
     for ( int i=1;i<=n;i++)
     {
         std::cout<<i<<" ";
@@ -23,5 +24,6 @@ int main()
         std::cout<<"\n";
 
     }
+    argc++;
     return 0;
 }
